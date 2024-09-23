@@ -42,6 +42,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
+import { Separator } from "@/components/ui/separator"
+
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 
@@ -183,7 +185,7 @@ export default function Home() {
           </Pagination>
         </div>
         <div className="w-full max-w-[600px] aspect-[6/5] relative">
-          <Carousel className="w-full h-full" setApi={setApi}>
+          <Carousel className="w-full max-w-[400px] h-full" setApi={setApi}>
             <CarouselContent>
               {tokenData.map((token) => (
                 <CarouselItem key={token.id}>
