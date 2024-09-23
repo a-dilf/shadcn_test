@@ -203,6 +203,7 @@ export default function Home() {
             <CarouselNext className="absolute right-4 top-1/2 transform -translate-y-1/2" />
           </Carousel>
         </div>
+        < Separator />
         <div className="w-full max-w-[600px] flex justify-center space-x-4 mt-4">
           <Drawer>
             <DrawerTrigger>
