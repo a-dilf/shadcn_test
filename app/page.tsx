@@ -31,7 +31,7 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer"
-import { useToast } from "@/hooks/use-toast"
+// import { useToast } from "@/hooks/use-toast"
 // import { ToastAction } from "@/components/ui/toast"
 import {
   Dialog,
@@ -56,7 +56,7 @@ const INITIAL_LOAD_COUNT = 5;
 export default function Home() {
   // const { toast } = useToast()
 
-  const [activeIndex, setActiveIndex] = useState(0);
+  // const [activeIndex, setActiveIndex] = useState(0);
   const [api, setApi] = useState<CarouselApi>();
   const [tokenData, setTokenData] = useState<TokenData[]>([]);
   const [loading, setLoading] = useState(true);
@@ -102,7 +102,7 @@ export default function Home() {
 
     api.on("select", () => {
       const newIndex = api.selectedScrollSnap();
-      setActiveIndex(newIndex);
+      // setActiveIndex(newIndex);
 
       if (newIndex + 3 >= loadedCount && loadedCount < tokenIds.length) {
         const nextBatch = tokenIds.slice(loadedCount, loadedCount + INITIAL_LOAD_COUNT);

@@ -51,7 +51,7 @@ export function NavBar() {
                       $PROPHET ERC-20 Gambling Token
                     </div>
                     <p className="text-sm leading-tight text-muted-foreground">
-                      Don't be poor
+                      Don&apos;t be poor
                     </p>
                   </a>
                 </NavigationMenuLink>
