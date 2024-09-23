@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, useCallback } from 'react';
-import Image from 'next/image';
+// import Image from 'next/image';
 import {
   Carousel,
   CarouselContent,
@@ -188,7 +188,7 @@ export default function Home() {
               {tokenData.map((token) => (
                 <CarouselItem key={token.id}>
                   <div className="w-full h-full flex items-center justify-center">
-                    <Image
+                    <img
                       src={token.image}
                       alt={`Token ${token.id}`}
                       className="max-w-full max-h-full object-contain"
